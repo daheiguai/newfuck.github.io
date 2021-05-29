@@ -61,6 +61,15 @@
             <div style="min-width: 4em; text-align-last: justify;">进出状态</div>：<div>进入</div>
         </li>
             </ul>
+    <script type="text/javascript">
+    fetch('https://quan.suning.com/getSysTime.do')
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    a=myJson.sysTime2;var b =document.getElementsByClassName("card-text p-2")[0];b.innerText="时间："+a
+  });
+</script>
 </div>
 
 
